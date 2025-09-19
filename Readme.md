@@ -19,7 +19,5 @@ The page is fully responsive, ensuring a smooth user experience across desktops,
 
 - Responsive layout that works on all devices.
 - Clean and minimal UI.
-- Organized file structure for easy maintenance.
-- Cross-browser compatibility.
 
 ---
