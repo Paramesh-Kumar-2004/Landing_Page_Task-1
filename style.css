@@ -53,3 +53,21 @@ nav a {
     background: #FA7436;
     color: #FFFFFF;
 }
+
+
+.ImageContainer {
+    width: 50vw;
+}
+
+.BGImageContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.MenPNG {
+    z-index: 1;
+}
