@@ -7,6 +7,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 #Title {
@@ -23,12 +24,32 @@ a {
 .Nav {
     display: flex;
     justify-content: space-between;
-    background: lightblue;
+    align-items: center;
 }
 
 
-nav a{
+nav a {
     color: black;
+    font-size: 16px;
+    padding: 14px;
+    margin: 14px;
+}
+
+.UserAction {
+    display: flex;
     font-size: 16px;
 }
 
+.UserAction a {
+    padding: 14px;
+    margin: 14px;
+    color: #FA7436;
+}
+
+.OrangeButton {
+    padding: 14px;
+    margin: 14px;
+    border-radius: 4px;
+    background: #FA7436;
+    color: #FFFFFF;
+}
