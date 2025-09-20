@@ -66,8 +66,17 @@ nav a {
     align-items: center;
     justify-content: center;
     z-index: -1;
+    background: skyblue;
 }
 
 .MenPNG {
+    display: flex;
+    justify-content: center;
     z-index: 1;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.MenPNG img {
+    width: 400px;
+    height: 500px;
 }
