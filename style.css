@@ -61,7 +61,6 @@ nav a {
 
 .Info {
     display: flex;
-    background: gray;
 }
 
 .ContentContainer {
@@ -69,9 +68,24 @@ nav a {
 }
 
 .BGImageContainer {
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: gold;
+    z-index: -1;
+}
+
+.MenPNG {
+    display: flex;
+    justify-content: center;
+    background: orange;
+}
+
+.MenPNG img{
+    position: absolute;
+    top: 132px;
+    width: 400px;
+    height: 400px;
 }
