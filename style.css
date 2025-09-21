@@ -117,12 +117,13 @@ nav a {
 }
 
 .BGImageContainer {
+    height: 80vh;
     /* position: absolute; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: lightcoral;
+    /* background: lightcoral; */
     z-index: -1;
 }
 
@@ -134,7 +135,7 @@ nav a {
 
 .MenPNG img {
     position: absolute;
-    top: 126px;
+    top: 160px;
     width: 350px;
     height: 400px;
 }
