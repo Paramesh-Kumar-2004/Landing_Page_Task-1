@@ -149,7 +149,7 @@ nav a {
 
 /* Cards */
 .Cards {
-    /* position: absolute; */
+    position: absolute;
     font-size: 16px;
     width: 200px;
     display: flex;
@@ -159,14 +159,26 @@ nav a {
     color: #444444;
     /* background: pink; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 3);
-    padding: 4px;
     word-wrap: break-word;
     font-family: "Poppins";
+    font-family: "Poppins", "serif";
+    height: 50px;
 }
 
 .BestTour {
-    /* position: absolute; */
+    font-size: 16px;
     width: 160px;
     top: 180px;
     right: 500px;
+}
+
+.ReviewContainer {
+    font-size: 12px;
+    width: 160px;
+    top: 400px;
+    right: 500px;
+}
+
+.Review h3 {
+    font-size: 16px;
 }
