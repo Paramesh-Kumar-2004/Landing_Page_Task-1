@@ -2,8 +2,8 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -11,6 +11,7 @@ a {
     color: white;
 }
 
+/* Header Nav */
 #Title {
     display: flex;
     align-items: center;
@@ -47,47 +48,30 @@ nav a {
     color: #FA7436;
 }
 
+/* Header Nav */
+
 .OrangeButton {
     padding: 14px;
     margin: 14px;
     border-radius: 4px;
+    width: fit-content;
     background: #FA7436;
     color: #FFFFFF;
 }
 
-
 .Info {
     display: flex;
+    background: gray;
 }
 
-.Content h1 {
-    font-size: 64px;
-}
-
-
-.ImageContainer {
-    width: 50vw;
+.ContentContainer {
+    /* background: skyblue; */
 }
 
 .BGImageContainer {
-    position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    z-index: -1;
-    background: skyblue;
-}
-
-.MenPNG {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.Filghts {
-    width: 700px;
-    height: 190px;
-    background: lawngreen;
+    background: gold;
 }
