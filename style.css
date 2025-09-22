@@ -30,9 +30,10 @@ header {
     width: 1200px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 14px;
-    /* border: 1px solid skyblue; */
+    /* border: 10px solid skyblue; */
 }
 
 #Title {
@@ -131,8 +132,7 @@ nav a {
     position: relative;
     height: 100%;
     width: 550px;
-    /* background: lightpink;
-    z-index: -1; */
+    /* background: lightpink; */
 }
 
 .BGImageContainer {
@@ -145,6 +145,11 @@ nav a {
     /* background: lightcoral;
     border: 2px solid #FA7436; */
 }
+
+/* .OrangeOfCircle {
+    position: absolute;
+    top: 40%;
+} */
 
 .MenPNG {
     position: absolute;
