@@ -158,16 +158,19 @@ nav a {
 .BestTour.Cards {
     display: flex;
     position: absolute;
-    padding: 14px;
+    padding: 10px;
     width: 150px;
-    background: lightpink;
+    background: #FFFFFF;
     z-index: 10;
-    font-size: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    /* box-shadow: 6px 5px 0px rgba(0, 0, 0, 0.1); */
 }
 
 .BestTour.Cards::before {
-    padding-right: 10px;
     content: url("assets/trophy-removebg-preview\ 1.svg");
+    padding-right: 10px;
+    transform: scale(0.8);
 }
 
 .BookingDetailsContainer {
