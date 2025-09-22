@@ -124,10 +124,12 @@ nav a {
 
 /* Image Container */
 .ImageContainer {
+    position: relative;
     height: 100%;
     width: 550px;
     /* background: lightpink; */
     z-index: -1;
+    background: gray;
 }
 
 .BGImageContainer {
@@ -169,15 +171,14 @@ nav a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
     word-wrap: break-word;
-    font-family: "Poppins";
     font-family: "Poppins", "serif";
 }
 
 .BestTour {
     color: #444444;
     font-size: 16px;
-    top: 230px;
-    right: 500px;
+    top: 40%;
+    left: 10%;
 }
 
 .BestTour div img {
@@ -212,7 +213,6 @@ nav a {
     font-size: 12px;
     color: #666666;
 }
-
 
 .BookingDetailsContainer {
     height: 80px;
