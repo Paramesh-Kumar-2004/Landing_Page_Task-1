@@ -26,6 +26,7 @@ a {
 
 
 .section {
+    display: flex;
     height: 100vh;
     width: 90%;
     margin: 14px auto;
@@ -110,7 +111,7 @@ header.section {
 
 .Information .ContentContainer {
     width: 500px;
-    background: pink;
+    /* background: pink; */
 }
 
 .Information .BGImageContainer {
@@ -122,7 +123,7 @@ header.section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: gold;
+    /* background: gold; */
 }
 
 .BGImageContainer .Flights {
