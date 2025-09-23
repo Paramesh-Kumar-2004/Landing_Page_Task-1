@@ -265,8 +265,23 @@ nav a {
     /* filter: drop-shadow(0 0 14px red); */
 }
 
-.Card2 {
-    width: 100px;
-    background: pink;
+.BookingDetailsCards {
+    padding: 14px;
 }
 
+.BookingDetailsCardsTitle {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.BookingDetailsCardsText {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.BookingDetailsCardsTitle::after {
+    content: url(assets/Vector\ 4855.svg);
+    padding-left: 3px;
+}
