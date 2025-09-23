@@ -30,8 +30,19 @@ a {
     width: 90%;
     margin: 14px auto;
     background: white;
+    /* border: 2px solid red; */
 }
 
+
+.OrangeButton {
+    background: #FA7436;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+.OrangeButton a {
+    color: white;
+}
 
 
 /* Navigation Bar  */
@@ -48,13 +59,9 @@ a {
     cursor: pointer;
 }
 
-.Links {
-    padding-left: 100px;
-    /* border: 2px solid darkblue; */
-}
-
 .Nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -83,12 +90,117 @@ nav a {
     color: black;
 }
 
-.OrangeButton {
-    background: #FA7436;
-    border-radius: 5px;
-    padding: 10px 20px 10px 20px;
+
+/* Content */
+
+header.section {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.OrangeButton a {
-    color: white;
+.Information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+}
+
+
+.Information .ContentContainer {
+    width: 500px;
+    background: pink;
+}
+
+.Information .BGImageContainer {
+    position: relative;
+    height: 400px;
+    width: 500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: gold;
+}
+
+.BGImageContainer .Flights {
+    top: -24px;
+    position: absolute;
+    /* border: 2px solid red; */
+}
+
+.BGImageContainer .OrangeOfCircle {
+    top: 50%;
+    position: absolute;
+}
+
+.BGImageContainer .MenPNG img {
+    position: absolute;
+    top: 10px;
+    right: 20%;
+    width: 300px;
+    height: 400px;
+}
+
+
+.ContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ContentContainer h1 {
+    font-family: "Volkhov", serif;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.ContentContainer span {
+    color: #FA7436;
+}
+
+.ContentContainer p {
+    font-family: "Poppins", "serif";
+    font-size: 20px;
+    color: #666666;
+}
+
+/* Booking Information */
+
+.BookingDetailsContainer {
+    height: 80px;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto 10px;
+    padding: 14px;
+    gap: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    /* filter: drop-shadow(0 0 14px red); */
+}
+
+.BookingDetailsCards {
+    padding: 14px;
+}
+
+.BookingDetailsCardsTitle {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.BookingDetailsCardsText {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.BookingDetailsCardsTitle::after {
+    content: url(../assets/Vector\ 4855.svg);
+    padding-left: 3px;
 }
