@@ -41,10 +41,16 @@ a {
     padding: 10px 20px 10px 20px;
 }
 
-.OrangeButton a {
-    color: white;
+.WhiteButton {
+    font-size: 18px;
+    width: fit-content;
+    padding: 10px;
+    margin: 24px 0 0 0;
+    background: white;
+    color: #FA7436;
+    border: 1px solid #FA7436;
+    cursor: pointer;
 }
-
 
 /* Navigation Bar  */
 
@@ -91,6 +97,10 @@ nav a {
     color: black;
 }
 
+.OrangeButton a {
+    color: white;
+}
+
 
 /* Content */
 
@@ -105,19 +115,20 @@ header.section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 14px 0 0 0;
     /* border: 2px solid red; */
 }
 
 
 .Information .ContentContainer {
-    width: 500px;
+    width: 480px;
     /* background: pink; */
 }
 
 .Information .BGImageContainer {
     position: relative;
     height: 400px;
-    width: 500px;
+    width: 450px;
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -127,6 +138,7 @@ header.section {
 }
 
 .BGImageContainer .Flights {
+    right: -10%;
     top: -24px;
     position: absolute;
     /* border: 2px solid red; */
@@ -139,10 +151,10 @@ header.section {
 
 .BGImageContainer .MenPNG img {
     position: absolute;
-    top: 10px;
+    top: 50px;
     right: 20%;
     width: 300px;
-    height: 400px;
+    height: 350px;
 }
 
 
@@ -154,8 +166,8 @@ header.section {
 
 .ContentContainer h1 {
     font-family: "Volkhov", serif;
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: bolder;
     line-height: 70px;
 }
 
