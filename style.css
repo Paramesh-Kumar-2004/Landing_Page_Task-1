@@ -302,3 +302,45 @@ header.section {
     content: url(../assets/Down_Arrow.svg);
     padding-left: 3px;
 }
+
+
+
+
+
+
+/* Part 2 Styles */
+
+section.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, 0.1); */
+}
+
+.section .Page2Title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin-bottom: 14px;
+    /* background: gray; */
+}
+
+.section .Page2Title img {
+    width: 150px;
+    position: absolute;
+    right: -5%;
+}
+
+.section .Page2Title .Page2Title_Para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .Page2Title .Page2Title_Para h4 {
+    font-size: 48px;
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+}
