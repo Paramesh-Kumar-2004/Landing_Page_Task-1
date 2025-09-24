@@ -322,19 +322,12 @@ section.section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 800px;
     margin-bottom: 24px;
-    /* background: gray; */
-}
-
-.section .Page2Title img {
-    width: 150px;
-    position: absolute;
-    right: -5%;
 }
 
 .section .Page2Title .Page2Title_Para {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -356,6 +349,12 @@ section.section {
 }
 
 
+.section .Page2Title img {
+    width: 150px;
+    position: absolute;
+    right: -150px;
+}
+
 /* Page 2 Cards Styles */
 .section .Page2Cards {
     display: flex;
@@ -367,7 +366,7 @@ section.section {
 
 .section .Page2Cards .Page2Card {
     height: 200px;
-    width: 300px;
+    width: 320px;
     padding: 14px;
     display: flex;
     flex-wrap: wrap;
@@ -385,8 +384,14 @@ section.section {
 }
 
 .Page2Card .Page2CardsContents p {
+    word-wrap: break-word;
     font-size: 16px;
     font-family: "Poppins", "serif";
-    font-weight: 200;
+    font-weight: 300;
     color: #222222;
+}
+
+
+.Page2Cards .Page2Card .Page2Img img {
+    width: 40px;
 }
