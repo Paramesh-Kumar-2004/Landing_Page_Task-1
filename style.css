@@ -366,8 +366,8 @@ section.section {
 
 .section .Page2Cards .Page2Card {
     height: 200px;
-    width: 320px;
-    padding: 14px;
+    width: 280px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -385,7 +385,7 @@ section.section {
 
 .Page2Card .Page2CardsContents p {
     word-wrap: break-word;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Poppins", "serif";
     font-weight: 300;
     color: #222222;
