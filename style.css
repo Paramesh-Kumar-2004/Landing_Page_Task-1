@@ -209,7 +209,7 @@ header.section {
 }
 
 .BestTour.Cards::before {
-    content: url("assets/trophy-removebg-preview\ 1.svg");
+    content: url(assets/Trophy.svg);
     padding-right: 10px;
     transform: scale(0.8);
 }
@@ -232,7 +232,7 @@ header.section {
 }
 
 .CustomerReview.Cards::before {
-    content: url(assets/star\ 1.jpg);
+    content: url(assets/Star.svg);
     padding-right: 10px;
     transform: scale(0.8);
 }
@@ -245,7 +245,7 @@ header.section {
 }
 
 .ExploreContainer.Cards::before {
-    content: url(assets/google-maps\ 1.svg);
+    content: url(assets/Google_Map.svg);
     padding-right: 15px;
     transform: scale(0.8);
 }
@@ -299,6 +299,6 @@ header.section {
 }
 
 .BookingDetailsCardsTitle::after {
-    content: url(../assets/Vector\ 4855.svg);
+    content: url(../assets/Down_Arrow.svg);
     padding-left: 3px;
 }
