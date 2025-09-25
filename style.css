@@ -4,6 +4,11 @@
 
 
 
+/* section,
+.section {
+    border: 3px solid red;
+} */
+
 
 *,
 *::after,
@@ -42,6 +47,7 @@ a {
     background: #FA7436;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
+    cursor: pointer;
 }
 
 .WhiteButton {
@@ -60,13 +66,13 @@ a {
 #Title {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .TitleName {
     font-weight: bold;
     font-size: 24px;
     padding: 0 14px 0 0;
-    cursor: pointer;
 }
 
 .Nav {
@@ -139,7 +145,8 @@ header.section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: gold; */
+    /* background: gold;
+    display: none; */
 }
 
 .BGImageContainer .Flights {
@@ -299,6 +306,7 @@ header.section {
 .BookingDetailsCardsTitle::after {
     content: url(assets/Page\ 1/Down_Arrow.svg);
     padding-left: 3px;
+    cursor: pointer;
 }
 
 
@@ -359,6 +367,7 @@ section.section {
 
 /* Page 2 Cards Styles */
 .section .Page2Cards {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -446,15 +455,23 @@ section.section {
 
 /* Page 3 Cards Styles */
 section.Page3 .Page3Cards {
+    margin-top: 24px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 24px;
+    /* background: gray; */
 }
 
 .section.Page3 .Page3Card {
     border-radius: 7px;
     box-shadow: 0 0 10px #aaaaa8;
+}
+
+.section.Page3 .Page3Card img {
+    width: 220px;
+    cursor: pointer;
 }
 
 .section.Page3 .Page3CardContents {
@@ -506,4 +523,24 @@ section.Page3 .Page3Cards {
     font-weight: 500;
     color: #AAAAAA;
     padding-right: 5px;
+}
+
+
+/* Page 3 Paginate Arrows Styles  */
+.section.Page3 .Paginate {
+    display: flex;
+    margin-top: 14px;
+    padding-top: 14px;
+    gap: 10px;
+}
+
+.section.Page3 .Paginate .Arrows {
+    position: relative;
+    cursor: pointer;
+}
+
+.section.Page3 .Paginate .Arrows .Arrow {
+    left: 28%;
+    top: 25%;
+    position: absolute;
 }
