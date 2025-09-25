@@ -609,3 +609,26 @@ section.Page3 .Page3Cards {
     top: -14px;
     right: -14px;
 }
+
+/* Page 4 Paginate Arrows Styles  */
+.section.Page4 .Paginate {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+    padding-top: 14px;
+    gap: 10px;
+}
+
+.section.Page4 .Paginate .Arrows {
+    position: relative;
+    cursor: pointer;
+}
+
+.section.Page4 .Paginate .Arrows .Arrow {
+    left: 28%;
+    top: 25%;
+    position: absolute;
+}
+
+
