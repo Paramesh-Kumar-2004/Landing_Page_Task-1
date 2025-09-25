@@ -556,7 +556,6 @@ section.Page3 .Page3Cards {
 
 
 
-
 /* Page 4 Styles */
 
 /* Title Part */
@@ -620,7 +619,7 @@ section.Page3 .Page3Cards {
 
 /* Page 4 Paginate Arrows Styles  */
 .section.Page4 .Paginate {
-    width: 90%;
+    width: 88%;
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -642,13 +641,14 @@ section.Page3 .Page3Cards {
 }
 
 .section.Page4 .Page4Cards .Page4Card .Image {
-    width: 300px;
+    width: 280px;
 }
 
 .section.Page4 .Page4Cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
     gap: 24px;
     /* background: gray; */
