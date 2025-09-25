@@ -16,6 +16,7 @@
 body {
     width: 100%;
     font-family: "Poppins", sans-serif;
+    background: #F7F8FC;
 }
 
 a {
@@ -29,9 +30,10 @@ a {
     display: flex;
     min-height: 100vh;
     max-height: auto;
-    width: 90%;
+    width: 100%;
     margin: 14px auto;
-    background: white;
+    padding: 0 60px;
+    /* background: white; */
     /* border: 2px solid red; */
 }
 
@@ -209,7 +211,7 @@ header.section {
 }
 
 .BestTour.Cards::before {
-    content: url(assets/Trophy.svg);
+    content: url(assets/Page\ 1/Trophy.svg);
     padding-right: 10px;
     transform: scale(0.8);
 }
@@ -232,7 +234,7 @@ header.section {
 }
 
 .CustomerReview.Cards::before {
-    content: url(assets/Star.svg);
+    content: url(assets/Page\ 1/Star.svg);
     padding-right: 10px;
     transform: scale(0.8);
 }
@@ -245,7 +247,7 @@ header.section {
 }
 
 .ExploreContainer.Cards::before {
-    content: url(assets/Google_Map.svg);
+    content: url(assets/Page\ 1/Google_Map.svg);
     padding-right: 15px;
     transform: scale(0.8);
 }
@@ -295,7 +297,7 @@ header.section {
 }
 
 .BookingDetailsCardsTitle::after {
-    content: url(../assets/Down_Arrow.svg);
+    content: url(assets/Page\ 1/Down_Arrow.svg);
     padding-left: 3px;
 }
 
@@ -372,6 +374,7 @@ section.section {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    background: #FFFFFF;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
 }
 
@@ -393,5 +396,11 @@ section.section {
 
 
 .Page2Cards .Page2Card .Page2Img img {
+    margin: 14px 0 0 14px;
     width: 40px;
 }
+
+
+
+
+/* Part 3 Styles */
