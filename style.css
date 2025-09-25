@@ -328,11 +328,13 @@ section.section {
 
 /* Page 2 Title Styles */
 .section .Page2Title {
+    width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 24px;
+    /* background: rebeccapurple; */
 }
 
 .section .Page2Title .Page2Title_Para {
@@ -358,11 +360,9 @@ section.section {
     color: #FA7436;
 }
 
-
 .section .Page2Title img {
     width: 150px;
     position: absolute;
-    right: -150px;
 }
 
 /* Page 2 Cards Styles */
@@ -413,6 +413,8 @@ section.section {
 
 
 /* Part 3 Styles */
+
+/* Page 3 Title */
 .section.Page3 {
     display: flex;
     flex-wrap: wrap;
@@ -549,3 +551,61 @@ section.Page3 .Page3Cards {
 
 
 /* Page 4 Styles */
+
+/* Title Part */
+.section.Page4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, 0.1); */
+}
+
+.section.Page4 .Page4Title {
+    display: flex;
+    padding: 14px;
+    flex-wrap: wrap;
+    /* background: #000; */
+}
+
+.section.Page4 .Page4Title .Page4Title_Para {
+    /* display: flex; */
+    text-align: center;
+    /* background: pink; */
+}
+
+.section.Page4 .Page4Title .Page4Title_Para h4 {
+    font-family: "Volkhov", serif;
+    font-size: 48px;
+    font-weight: bold;
+    /* color: #222222; */
+}
+
+.section.Page4 .Page4Title .Page4Title_Para h4 span {
+    color: #FA7436;
+}
+
+.section.Page4 .Page4Title .Page4Title_Para p {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #666666;
+}
+
+.section.Page4 .Page4Title .Trees {
+    top: 24px;
+    left: 50px;
+    display: flex;
+    position: relative;
+}
+
+.section.Page4 .Page4Title .Trees .Tree1 {
+    position: absolute;
+}
+
+.section.Page4 .Page4Title .Trees .Tree2 {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+}
