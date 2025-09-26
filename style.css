@@ -41,7 +41,7 @@ a {
     min-height: 100vh;
     max-height: auto;
     width: 100%;
-    margin: 14px auto;
+    /* margin: 14px auto; */
     padding: 0 60px;
     /* background: white; */
     /* border: 2px solid red; */
@@ -949,4 +949,12 @@ section.Page3 .Page3Cards {
 
 .section.Page6 .Paginate {
     margin-top: 10px;
+}
+
+
+
+/* Footer : Last Page */
+
+footer {
+    background: rgba(0, 0, 0, 0.2);
 }
