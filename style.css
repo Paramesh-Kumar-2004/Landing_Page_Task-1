@@ -149,8 +149,8 @@ header.section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: gold;
-    display: none; */
+    background: gold;
+    display: none;
 }
 
 .BGImageContainer .Flights {
@@ -748,7 +748,7 @@ section.Page3 .Page3Cards {
 .section.Page5 {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -762,7 +762,7 @@ section.Page3 .Page3Cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background: lightcyan; */
+    /* background: cyan; */
 }
 
 .section.Page5 .Contents h2 {
@@ -781,9 +781,6 @@ section.Page3 .Page3Cards {
     font-size: 16px;
 }
 
-
-
-
 /* Cards */
 .section.Page5 .Cards {
     position: relative;
@@ -796,8 +793,8 @@ section.Page3 .Page3Cards {
 }
 
 .section.Page5 .Cards .Card {
-    width: 400px;
-    height: 220px;
+    width: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -837,7 +834,7 @@ section.Page3 .Page3Cards {
 .section.Page5 .Cards .Flights {
     position: absolute;
     top: -126px;
-    right: 0;
+    left: 250px;
 }
 
 .section.Page5 .Cards .Flights .FlightsInside {
@@ -854,22 +851,22 @@ section.Page3 .Page3Cards {
 }
 
 .section.Page5 .Cards .Flights .FlightsInside .FlightImg2 {
-    top: 40px;
+    top: 30px;
     left: -24px;
 }
 
 .section.Page5 .Cards .Flights .FlightsInside .FlightImg3 {
-    top: 80px;
+    top: 60px;
 }
 
 .section.Page5 .Cards .Flights .FlightsInside .LineImg1 {
-    top: 5px;
-    left: 40px;
+    top: 2px;
+    left: 30px;
 }
 
 .section.Page5 .Cards .Flights .FlightsInside .LineImg2 {
-    left: 40px;
-    top: 85px;
+    top: 64px;
+    left: 30px;
 }
 
 
