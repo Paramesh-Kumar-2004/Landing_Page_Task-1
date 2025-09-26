@@ -954,16 +954,17 @@ section.Page3 .Page3Cards {
 
 
 /* Footer : Last Page */
-
 footer {
     display: flex;
     justify-content: center;
-    background: rgba(0, 0, 0, 2);
 }
 
 footer .Box {
     width: 90%;
+}
+
+footer .Box .OrangeBox {
     height: 300px;
+    border-radius: 10px;
     background: #FA7436;
-    background: gray;
 }
