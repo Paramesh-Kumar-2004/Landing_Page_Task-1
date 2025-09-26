@@ -149,8 +149,8 @@ header.section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: gold;
-    display: none;
+    /* background: gold;
+    display: none; */
 }
 
 .BGImageContainer .Flights {
