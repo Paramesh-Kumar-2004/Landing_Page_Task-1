@@ -20,6 +20,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -748,7 +749,9 @@ section.Page3 .Page3Cards {
 
 /* Page 5 Testimonial */
 .section.Page5 {
+    min-height: 100vh;
     width: 100%;
+    padding-bottom: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -827,9 +830,6 @@ section.Page3 .Page3Cards {
     z-index: -1;
     opacity: 0.3;
 }
-
-
-
 
 /* Flights */
 
@@ -917,6 +917,14 @@ section.Page3 .Page3Cards {
 }
 
 /* Cards Part */
+.section.Page6 .Cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+}
+
 .section.Page6 .Cards .Card {
     display: flex;
     flex-direction: column;
@@ -937,4 +945,8 @@ section.Page3 .Page3Cards {
     font-weight: normal;
     font-family: "Inter", sans-serif;
     color: #999999;
+}
+
+.section.Page6 .Paginate {
+    margin-top: 10px;
 }
