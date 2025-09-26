@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 
 /* section,
@@ -746,47 +748,146 @@ section.Page3 .Page3Cards {
 .section.Page5 {
     width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 24px;
-    justify-content: space-around;
-    background: gray;
+    /* background: gray; */
 }
 
 .section.Page5 .Contents {
-    background: lightcyan;
-    width: 300px;
+    width: 400px;
     min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: lightcyan; */
 }
+
+.section.Page5 .Contents h2 {
+    font-family: "Volkhov", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.section.Page5 .Contents h2 span {
+    color: #FA7436;
+}
+
+.section.Page5 .Contents p {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
 
 
 /* Cards */
 .section.Page5 .Cards {
     position: relative;
-    background: #000;
 }
 
+.section.Page5 .Cards .UserImage {
+    position: absolute;
+    top: -34px;
+    left: -34px;
+}
 
-.section.Page5 .Cards .Card1 {
-    background: cyan;
-    width: 300px;
-    height: 300px;
-    margin: 14px;
+.section.Page5 .Cards .Card {
+    width: 400px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    box-shadow: 0 0 10px #aaaaa8;
+    border-radius: 6px;
+    background: white;
+}
+
+.section.Page5 .Cards .Card p {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #444444;
+}
+
+.section.Page5 .Cards .Card .UserInfo h2 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
 }
 
 .section.Page5 .Cards .Card2 {
     position: absolute;
-    top: 0;
-    background: red;
-    width: 300px;
-    height: 300px;
-    display: none;
+    padding-right: 24px;
+    top: 35%;
+    left: 10%;
+    z-index: -1;
+    opacity: 0.3;
 }
+
 
 
 
 /* Flights */
 
-.section.Page5 .Cards .Flights{
-    background: brown;
+.section.Page5 .Cards .Flights {
+    position: absolute;
+    top: -126px;
+    right: 0;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside {
+    position: relative;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .Flight,
+.FlightLine {
+    position: absolute;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .FlightImg1 {
+    top: 0;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .FlightImg2 {
+    top: 40px;
+    left: -24px;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .FlightImg3 {
+    top: 80px;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .LineImg1 {
+    top: 5px;
+    left: 40px;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .LineImg2 {
+    left: 40px;
+    top: 85px;
+}
+
+
+/* Page 5 Paginate Arrows Styles  */
+.section.Page5 .Paginate {
+    display: flex;
+    margin-top: 14px;
+    padding-top: 14px;
+    gap: 10px;
+}
+
+.section.Page5 .Paginate .Arrows {
+    position: relative;
+    cursor: pointer;
+}
+
+.section.Page5 .Paginate .Arrows .Arrow {
+    left: 28%;
+    top: 25%;
+    position: absolute;
 }
