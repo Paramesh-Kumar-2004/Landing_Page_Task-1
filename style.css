@@ -113,9 +113,11 @@ nav a {
 /* Content */
 
 header.section {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    /* border: 2px solid red; */
 }
 
 .Information {
@@ -196,7 +198,7 @@ header.section {
 }
 
 /* Anatomy Cards Styles */
-.Cards {
+header.section .Cards {
     position: absolute;
     display: flex;
     align-items: center;
@@ -733,4 +735,58 @@ section.Page3 .Page3Cards {
     content: url(assets/Page\ 4/Little_Star.svg);
     padding-right: 5px;
     /* background: red; */
+}
+
+
+
+
+
+
+/* Page 5 Testimonial */
+.section.Page5 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-around;
+    background: gray;
+}
+
+.section.Page5 .Contents {
+    background: lightcyan;
+    width: 300px;
+    min-height: 300px;
+}
+
+
+/* Cards */
+.section.Page5 .Cards {
+    position: relative;
+    background: #000;
+}
+
+
+.section.Page5 .Cards .Card1 {
+    background: cyan;
+    width: 300px;
+    height: 300px;
+    margin: 14px;
+}
+
+.section.Page5 .Cards .Card2 {
+    position: absolute;
+    top: 0;
+    background: red;
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+
+
+/* Flights */
+
+.section.Page5 .Cards .Flights{
+    background: brown;
 }
