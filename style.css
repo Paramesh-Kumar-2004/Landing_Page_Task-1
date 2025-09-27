@@ -1013,6 +1013,7 @@ footer .Box .OrangeBox .InputBox {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    z-index: 1;
     /* background: rebeccapurple; */
 }
 
@@ -1022,6 +1023,7 @@ footer .Box .OrangeBox .InputBox input {
     width: 100%;
     height: 50px;
     padding-left: 50px;
+    /* background: #000; */
 }
 
 footer .Box .OrangeBox .InputBox .OrangeButton {
@@ -1037,24 +1039,48 @@ footer .Box .OrangeBox .InputBox .MailIcon {
     left: 24px;
 }
 
-
-
-
-
-
+/* Circles */
 footer .Box .OrangeBox .Circles {
+    position: absolute;
     bottom: 0;
     left: 0;
+}
+
+footer .Box .OrangeBox .Circles.Circle1 {
+    left: 2px;
+}
+
+footer .Box .OrangeBox .Circles.Circle2 {
+    left: 3px;
+}
+
+footer .Box .OrangeBox .Circles.Circle3 {
+    left: 4px;
+}
+
+footer .Box .OrangeBox .Circles.Circle4 {
+    left: 5px;
+}
+
+footer .Box .OrangeBox .Circles.Circle5 {
+    left: 6px;
+}
+
+footer .Box .OrangeBox .Circles.Circle6 {
+    left: 10px;
+}
+
+/* Trees */
+footer .Box .OrangeBox .Tree {
+    top: 6px;
+    right: 0;
     position: absolute;
 }
 
-/* footer .Box .OrangeBox .Circles .Circle1 {
-    
-} */
-
-
-
-
+footer .Box .OrangeBox .Tree.Tree2 {
+    top: 30px;
+    right: 45px;
+}
 
 
 
