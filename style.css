@@ -152,8 +152,8 @@ header.section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: gold;
-    display: none; */
+    background: gold;
+    display: none;
 }
 
 .BGImageContainer .Flights {
@@ -989,7 +989,9 @@ footer .Box .OrangeBox {
 footer.section .Box .SocialAndQuickLinks {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 24px 0 24px 0;
+    gap: 24px;
 }
 
 footer.section .Box .SocialAndQuickLinks .SocialLinks #Title div {
@@ -1007,7 +1009,11 @@ footer.section .Box .SocialAndQuickLinks .SocialLinks p {
 
 footer.section .Box .SocialAndQuickLinks .QuickLinks {
     display: flex;
-    /* background: gray; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 100px;
+    /* width: 400px;
+    background: gray; */
 }
 
 footer.section .Box .SocialAndQuickLinks .QuickLinks nav {
@@ -1024,14 +1030,29 @@ footer.section .Box .SocialAndQuickLinks .QuickLinks nav a {
     margin: 0;
 }
 
-footer.section .Box .SocialAndQuickLinks .QuickLinks div {
-    padding: 0 24px 0 0;
-}
-
 footer.section .Box .SocialAndQuickLinks .QuickLinks div h3 {
     font-size: 18px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     margin-bottom: 14px;
     color: #222222;
+}
+
+footer.section .Box hr {
+    margin: 14px 0 14px 0;
+}
+
+footer.section .Box .Copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+footer.section .Box .Copyright p {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    color: #666666;
 }
