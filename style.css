@@ -973,7 +973,7 @@ section.Page3 .Page3Cards {
 footer {
     display: flex;
     justify-content: center;
-    background: #000;
+    /* background: #000; */
 }
 
 /* Orange Box */
@@ -985,12 +985,14 @@ footer .Box .OrangeBox {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-evenly;
     align-items: center;
+    min-width: 300px;
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     border-radius: 10px;
+    padding: 14px;
     background: #FA7436;
 }
 
@@ -1005,18 +1007,39 @@ footer .Box .OrangeBox h2 {
 }
 
 footer .Box .OrangeBox .InputBox {
+    position: relative;
+    width: 60%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: center;
+    /* background: rebeccapurple; */
 }
 
-footer .Box .OrangeBox .InputBox .InputDiv {
-    /* max-width: 500px; */
-    width: 50%;
-    flex-shrink: 1;
-    background: red;
-    flex-shrink: 1;
+footer .Box .OrangeBox .InputBox input {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    padding-left: 50px;
 }
+
+footer .Box .OrangeBox .InputBox .OrangeButton {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    padding: 8px;
+}
+
+footer .Box .OrangeBox .InputBox .MailIcon {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+}
+
+
+
+
 
 
 footer .Box .OrangeBox .Circles {
