@@ -478,6 +478,22 @@ section.Page3 .Page3Cards {
     box-shadow: 0 0 10px #aaaaa8;
 }
 
+.section.Page3 .Page3Card .ImageContainer {
+    position: relative;
+}
+
+.section.Page3 .Page3Card .ImageContainer button {
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", "serif";
+    color: white;
+    border: none;
+    padding: 8px;
+}
+
 .section.Page3 .Page3Card img {
     width: 220px;
     cursor: pointer;
