@@ -984,3 +984,54 @@ footer .Box .OrangeBox {
     border-radius: 10px;
     background: #FA7436;
 }
+
+
+footer.section .Box .SocialAndQuickLinks {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0 24px 0;
+}
+
+footer.section .Box .SocialAndQuickLinks .SocialLinks #Title div {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Volkhov", serif;
+}
+
+footer.section .Box .SocialAndQuickLinks .SocialLinks p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #666666;
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks {
+    display: flex;
+    /* background: gray; */
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks nav a {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #666666;
+    padding: 12px 0 0 0;
+    margin: 0;
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks div {
+    padding: 0 24px 0 0;
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks div h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 14px;
+    color: #222222;
+}
