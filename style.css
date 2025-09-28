@@ -112,7 +112,6 @@ nav a {
     color: white;
 }
 
-
 /* Content */
 
 header.section {
@@ -174,6 +173,7 @@ header.section {
     width: 300px;
     height: 350px;
 }
+
 
 
 /* Home Page : Left Side Content  */
@@ -317,9 +317,6 @@ header.section .Cards {
 
 
 
-
-
-
 /* Part 2 Styles */
 
 section.section {
@@ -330,7 +327,6 @@ section.section {
     justify-content: center;
     /* background: rgba(0, 0, 0, 0.1); */
 }
-
 
 /* Page 2 Title Styles */
 .section .Page2Title {
@@ -409,12 +405,10 @@ section.section {
     color: #222222;
 }
 
-
 .Page2Cards .Page2Card .Page2Img img {
     margin: 14px 0 0 14px;
     width: 40px;
 }
-
 
 
 
@@ -555,7 +549,6 @@ section.Page3 .Page3Cards {
     padding-right: 5px;
 }
 
-
 /* Page 3 Paginate Arrows Styles  */
 .section.Page3 .Paginate {
     display: flex;
@@ -574,7 +567,6 @@ section.Page3 .Page3Cards {
     top: 25%;
     position: absolute;
 }
-
 
 
 
@@ -756,9 +748,6 @@ section.Page3 .Page3Cards {
     padding-right: 5px;
     /* background: red; */
 }
-
-
-
 
 
 
