@@ -1003,6 +1003,7 @@ footer .Box .OrangeBox h2 {
     font-weight: bold;
     font-family: "Volkhov", serif;
     color: #FFFFFF;
+    z-index: 1;
 }
 
 footer .Box .OrangeBox .InputBox {
