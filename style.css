@@ -335,7 +335,7 @@ section.section {
 
 /* Page 2 Title Styles */
 .section .Page2Title {
-    width: 100%;
+    width: 80%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -664,7 +664,7 @@ section.Page3 .Page3Cards {
 }
 
 .section.Page4 .Page4Cards .Page4Card .Image {
-    width: 280px;
+    width: 250px;
 }
 
 .section.Page4 .Page4Cards {
