@@ -35,7 +35,6 @@ a {
     cursor: pointer;
 }
 
-
 .section {
     display: flex;
     min-height: 100vh;
@@ -46,7 +45,6 @@ a {
     /* background: white; */
     /* border: 2px solid red; */
 }
-
 
 .OrangeButton {
     background: #FA7436;
@@ -128,6 +126,7 @@ header.section {
 .Information {
     width: 100%;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     margin: 14px 0 0 0;
