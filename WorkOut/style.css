@@ -27,7 +27,7 @@ body {
     width: 100%;
     font-family: "Poppins", sans-serif;
     background: #F7F8FC;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 a {
@@ -86,7 +86,7 @@ a {
     width: 100%;
     height: auto;
     align-items: center;
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
 }
 
 nav a {
@@ -128,16 +128,15 @@ header.section {
 .Information {
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 14px 0 0 0;
     /* border: 2px solid red; */
 }
 
-
 .Information .ContentContainer {
-    width: 480px;
+    width: 420px;
     /* background: pink; */
 }
 
