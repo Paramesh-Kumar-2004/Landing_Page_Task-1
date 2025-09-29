@@ -2,9 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-/* Common Use Like Components Start */
+
+/* section,
+.section {
+    border: 3px solid red;
+} */
+
 
 *,
 *::after,
@@ -12,10 +20,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
+    width: 100%;
     font-family: "Poppins", sans-serif;
+    background: #F7F8FC;
+    border: 3px solid red;
 }
 
 a {
@@ -24,46 +36,57 @@ a {
     cursor: pointer;
 }
 
-/* Common Use Like Components End */
-
-
-
-
-/* Header */
-
-header {
-    height: 100vh;
-    width: 1200px;
+.section {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0 14px;
-    /* border: 10px solid skyblue; */
+    min-height: 100vh;
+    max-height: auto;
+    width: 100%;
+    /* margin: 14px auto; */
+    padding: 0 60px;
+    /* background: white; */
+    /* border: 2px solid red; */
 }
+
+.OrangeButton {
+    background: #FA7436;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.WhiteButton {
+    font-size: 18px;
+    width: fit-content;
+    padding: 10px;
+    margin: 24px 0 0 0;
+    background: white;
+    color: #FA7436;
+    border: 1px solid #FA7436;
+    cursor: pointer;
+}
+
+/* Navigation Bar  */
 
 #Title {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .TitleName {
     font-weight: bold;
     font-size: 24px;
     padding: 0 14px 0 0;
-    cursor: pointer;
-}
-
-.Links {
-    padding-left: 100px;
-    /* border: 2px solid darkblue; */
 }
 
 .Nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
+    height: auto;
     align-items: center;
-    /* border: 2px solid salmon; */
+    border: 2px solid salmon;
 }
 
 nav a {
@@ -71,12 +94,11 @@ nav a {
     font-size: 16px;
     padding: 14px;
     margin: 14px;
-
 }
-
 
 .UserAction {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 16px;
     height: 50px;
@@ -89,39 +111,87 @@ nav a {
     color: black;
 }
 
-.OrangeButton {
-    background: #FA7436;
-    border-radius: 5px;
-    padding: 10px 20px 10px 20px;
-}
-
 .OrangeButton a {
     color: white;
 }
 
+/* Content */
 
-.Info {
+header.section {
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 70%;
+    flex-grow: 1;
     /* border: 2px solid red; */
 }
 
+.Information {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0 0 0;
+    /* border: 2px solid red; */
+}
+
+
+.Information .ContentContainer {
+    width: 480px;
+    /* background: pink; */
+}
+
+
+/* Home Page Right Side Images Styles */
+
+.Information .BGImageContainer {
+    position: relative;
+    height: 400px;
+    width: 450px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: gold;
+    display: none; */
+}
+
+.BGImageContainer .Flights {
+    right: 0;
+    top: -24px;
+    position: absolute;
+    /* border: 2px solid red; */
+}
+
+.BGImageContainer .OrangeOfCircle {
+    top: 50%;
+    position: absolute;
+}
+
+.BGImageContainer .MenPNG img {
+    position: absolute;
+    top: 55px;
+    right: 15%;
+    width: 300px;
+    height: 350px;
+}
+
+
+
+/* Home Page : Left Side Content  */
 .ContentContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 600px;
-    /* height: 100%; */
-    /* background: skyblue; */
 }
 
 .ContentContainer h1 {
     font-family: "Volkhov", serif;
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: bolder;
     line-height: 70px;
+    z-index: 1;
 }
 
 .ContentContainer span {
@@ -134,49 +204,8 @@ nav a {
     color: #666666;
 }
 
-.WhiteButton {
-    font-size: 18px;
-    width: fit-content;
-    padding: 10px;
-    background: white;
-    color: #FA7436;
-    border: 1px solid #FA7436;
-    cursor: pointer;
-}
-
-
-/* Image Container */
-.ImageContainer {
-    position: relative;
-    height: 100%;
-    width: 550px;
-    /* background: lightpink; */
-}
-
-.BGImageContainer {
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    /* background: lightcoral; */
-    /* border: 2px solid #FA7436; */
-}
-
-.MenPNG {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 50px;
-}
-
-.MenPNG img {
-    width: 300px;
-    height: 370px;
-}
-
-.Cards {
+/* Anatomy Cards Styles */
+header.section .Cards {
     position: absolute;
     display: flex;
     align-items: center;
@@ -184,12 +213,12 @@ nav a {
     font-size: 16px;
     border-radius: 8px;
     background: #FFFFFF;
-    box-shadow: 6px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.3);
 }
 
 .BestTour.Cards {
-    top: 28%;
-    left: 3px;
+    top: 25%;
+    left: -20px;
     width: 150px;
 }
 
@@ -198,7 +227,7 @@ nav a {
 }
 
 .BestTour.Cards::before {
-    content: url("assets/trophy-removebg-preview\ 1.svg");
+    content: url(assets/Page\ 1/Trophy.svg);
     padding-right: 10px;
     transform: scale(0.8);
 }
@@ -206,7 +235,7 @@ nav a {
 .CustomerReview.Cards {
     width: 170px;
     top: 65%;
-    left: 5%;
+    left: 1%;
 }
 
 .CustomerReview.Cards #NumberOfCustomerReview {
@@ -221,7 +250,7 @@ nav a {
 }
 
 .CustomerReview.Cards::before {
-    content: url(assets/star\ 1.jpg);
+    content: url(assets/Page\ 1/Star.svg);
     padding-right: 10px;
     transform: scale(0.8);
 }
@@ -230,11 +259,11 @@ nav a {
 .ExploreContainer.Cards {
     width: 160px;
     top: 45%;
-    right: 10%;
+    right: 2%;
 }
 
 .ExploreContainer.Cards::before {
-    content: url(assets/google-maps\ 1.svg);
+    content: url(assets/Page\ 1/Google_Map.svg);
     padding-right: 15px;
     transform: scale(0.8);
 }
@@ -250,10 +279,12 @@ nav a {
     color: #666666;
 }
 
+/* Booking Information */
 
 .BookingDetailsContainer {
-    height: 80px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     /* width: 100%; */
     justify-content: center;
     align-items: center;
@@ -282,6 +313,869 @@ nav a {
 }
 
 .BookingDetailsCardsTitle::after {
-    content: url(assets/Vector\ 4855.svg);
+    content: url(assets/Page\ 1/Down_Arrow.svg);
     padding-left: 3px;
+    cursor: pointer;
+}
+
+
+
+/* Part 2 Styles */
+
+section.section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, 0.1); */
+}
+
+/* Page 2 Title Styles */
+.section .Page2Title {
+    width: 80%;
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 24px;
+    /* background: rebeccapurple; */
+}
+
+.section.Page2 .Page2Title .Page2TitleContainer {
+    position: relative;
+    width: 80%;
+    /* background: pink; */
+}
+
+.section .Page2Title .Page2TitleContainer .TwoFlights {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section .Page2Title .Page2TitleContainer .TwoFlights img {
+    width: 160px;
+}
+
+.section .Page2Title .Page2Title_Para {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .Page2Title .Page2Title_Para h4 {
+    font-size: 48px;
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+}
+
+.section .Page2Title .Page2Title_Para p {
+    font-family: "Poppins", "serif";
+    color: #666666;
+    font-size: 18px;
+}
+
+.section .Page2Title .Page2Title_Para span {
+    color: #FA7436;
+}
+
+/* Page 2 Cards Styles */
+.section .Page2Cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
+    /* border: 2px solid salmon; */
+}
+
+.section .Page2Cards .Page2Card {
+    height: 200px;
+    width: 280px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+}
+
+.Page2Card .Page2CardsContents div {
+    font-size: 24px;
+    font-family: "Poppins", "serif";
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.Page2Card .Page2CardsContents p {
+    word-wrap: break-word;
+    font-size: 14px;
+    font-family: "Poppins", "serif";
+    font-weight: 300;
+    color: #222222;
+}
+
+.Page2Cards .Page2Card .Page2Img img {
+    margin: 14px 0 0 14px;
+    width: 40px;
+}
+
+
+
+/* Part 3 Styles */
+
+/* Page 3 Title */
+.section.Page3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, 0.1); */
+}
+
+.section.Page3 .Page3Title {
+    display: flex;
+    padding: 14px;
+}
+
+.section.Page3 .Page3Title .Page3Title_Para {
+    /* display: flex; */
+    text-align: center;
+    /* background: pink; */
+}
+
+.section.Page3 .Page3Title .Page3Title_Para h4 {
+    font-family: "Volkhov", serif;
+    font-size: 48px;
+    font-weight: bold;
+    /* color: #222222; */
+}
+
+.section.Page3 .Page3Title .Page3Title_Para h4 span {
+    color: #FA7436;
+}
+
+.section.Page3 .Page3Title .Page3Title_Para p {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #666666;
+}
+
+
+
+/* Page 3 Cards Styles */
+section.Page3 .Page3Cards {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+    /* background: gray; */
+}
+
+.section.Page3 .Page3Card {
+    border-radius: 7px;
+    box-shadow: 0 0 10px #aaaaa8;
+}
+
+.section.Page3 .Page3Card .ImageContainer {
+    position: relative;
+}
+
+.section.Page3 .Page3Card .ImageContainer button {
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", "serif";
+    color: white;
+    border: none;
+    padding: 8px;
+}
+
+.section.Page3 .Page3Card img {
+    width: 220px;
+    cursor: pointer;
+}
+
+.section.Page3 .Page3CardContents {
+    margin: 10px;
+}
+
+.section.Page3 .Page3CardContents .NameAndRating {
+    display: flex;
+    justify-content: space-between;
+    /* background: gray; */
+}
+
+.section.Page3 .Page3CardContents .NameAndRating .Ratings::before {
+    /* background: #000; */
+    position: relative;
+    top: 2px;
+    transform: scale(0.9);
+    content: url(assets/Page\ 3/Little_Star.svg);
+    padding-right: 4px;
+}
+
+.section.Page3 .Page3CardContents .LocationAndPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: gray; */
+}
+
+.section.Page3 .Page3CardContents .LocationAndPrice .LocationName {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", "serif";
+    color: #666666;
+    /* background: pink; */
+}
+
+.section.Page3 .Page3CardContents .LocationAndPrice .LocationName::before {
+    position: relative;
+    top: 2px;
+    transform: scale(0.9);
+    content: url(assets/Page\ 3/Gray_Map.svg);
+    padding-right: 3px;
+}
+
+.section.Page3 .Page3CardContents .LocationAndPrice div .Price {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", "serif";
+    color: #FA7436;
+}
+
+.section.Page3 .Page3CardContents .LocationAndPrice div span.StrikeThrough {
+    text-decoration: line-through;
+    font-weight: 500;
+    color: #AAAAAA;
+    padding-right: 5px;
+}
+
+/* Page 3 Paginate Arrows Styles  */
+.section.Page3 .Paginate {
+    display: flex;
+    margin-top: 14px;
+    padding-top: 14px;
+    gap: 10px;
+}
+
+.section.Page3 .Paginate .Arrows {
+    position: relative;
+    cursor: pointer;
+}
+
+.section.Page3 .Paginate .Arrows .Arrow {
+    left: 28%;
+    top: 25%;
+    position: absolute;
+}
+
+
+
+/* Page 4 Styles */
+
+/* Title Part */
+.section.Page4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, 0.1); */
+}
+
+.section.Page4 .Page4Title {
+    display: flex;
+    padding: 14px;
+    flex-wrap: wrap;
+    /* background: #000; */
+}
+
+.section.Page4 .Page4Title .Page4Title_Para {
+    /* display: flex; */
+    text-align: center;
+    /* background: pink; */
+}
+
+.section.Page4 .Page4Title .Page4Title_Para h4 {
+    font-family: "Volkhov", serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    /* background: #000; */
+}
+
+.section.Page4 .Page4Title .Page4Title_Para h4 span {
+    color: #FA7436;
+}
+
+.section.Page4 .Page4Title .Page4Title_Para p {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #666666;
+}
+
+.section.Page4 .Page4Title .Trees {
+    top: 24px;
+    left: 50px;
+    display: flex;
+    position: relative;
+}
+
+.section.Page4 .Page4Title .Trees .Tree1 {
+    position: absolute;
+}
+
+.section.Page4 .Page4Title .Trees .Tree2 {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+}
+
+/* Page 4 Paginate Arrows Styles  */
+.section.Page4 .Paginate {
+    width: 88%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    gap: 10px;
+    /* background: #000; */
+}
+
+.section.Page4 .Paginate .Arrows {
+    position: relative;
+    cursor: pointer;
+}
+
+.section.Page4 .Paginate .Arrows .Arrow {
+    left: 28%;
+    top: 25%;
+    position: absolute;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Image {
+    width: 250px;
+}
+
+.section.Page4 .Page4Cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    /* background: gray; */
+}
+
+.section.Page4 .Page4Cards .Page4Card {
+    border-radius: 14px;
+    /* background: pink; */
+    box-shadow: 0 0 10px #aaaaa8;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents {
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents .NameAndPrice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents .NameAndPrice .Name {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents .NameAndPrice .Price {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #FA7436;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice .LocationName {
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Poppins", "serif";
+    color: #666666;
+    /* background: pink; */
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice .Ratings {
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Poppins", "serif";
+    color: #666666;
+    /* background: black; */
+    padding: 4px;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice .LocationName::before {
+    position: relative;
+    top: 2px;
+    transform: scale(0.9);
+    content: url(assets/Page\ 4/Send_Arrow.svg);
+    padding-right: 12px;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice .Ratings::before {
+    position: relative;
+    top: 2px;
+    content: url(assets/Page\ 4/Little_Star.svg);
+    padding-right: 5px;
+    /* background: red; */
+}
+
+
+
+/* Page 5 Testimonial */
+.section.Page5 {
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    /* background: gray; */
+}
+
+.section.Page5 .Contents {
+    width: 400px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: cyan; */
+}
+
+.section.Page5 .Contents h2 {
+    font-family: "Volkhov", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.section.Page5 .Contents h2 span {
+    color: #FA7436;
+}
+
+.section.Page5 .Contents p {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Cards */
+.section.Page5 .Cards {
+    position: relative;
+}
+
+.section.Page5 .Cards .UserImage {
+    position: absolute;
+    top: -34px;
+    left: -34px;
+}
+
+.section.Page5 .Cards .Card {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    box-shadow: 0 0 10px #aaaaa8;
+    border-radius: 6px;
+    background: white;
+}
+
+.section.Page5 .Cards .Card p {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #444444;
+}
+
+.section.Page5 .Cards .Card .UserInfo h2 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.section.Page5 .Cards .Card2 {
+    position: absolute;
+    padding-right: 24px;
+    top: 35%;
+    left: 10%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Flights */
+
+.section.Page5 .Cards .Flights {
+    position: absolute;
+    top: -126px;
+    left: 250px;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside {
+    position: relative;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .Flight,
+.FlightLine {
+    position: absolute;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .FlightImg1 {
+    top: 0;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .FlightImg2 {
+    top: 30px;
+    left: -24px;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .FlightImg3 {
+    top: 60px;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .LineImg1 {
+    top: 2px;
+    left: 30px;
+}
+
+.section.Page5 .Cards .Flights .FlightsInside .LineImg2 {
+    top: 64px;
+    left: 30px;
+}
+
+/* Page 5 Paginate Arrows Styles  */
+.section.Page5 .Paginate {
+    display: flex;
+    margin-top: 14px;
+    padding-top: 14px;
+    gap: 10px;
+}
+
+.section.Page5 .Paginate .Arrows {
+    position: relative;
+    cursor: pointer;
+}
+
+.section.Page5 .Paginate .Arrows .Arrow {
+    left: 28%;
+    top: 25%;
+    position: absolute;
+}
+
+
+
+
+/* Page 6 : Blog */
+
+/* Title Part */
+.section.Page6 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section.Page6 .Title h1 {
+    font-size: 48px;
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.section.Page6 .Title h1 span {
+    color: #FA7436;
+}
+
+/* Cards Part */
+.section.Page6 .Cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.section.Page6 .Cards .Card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 14px;
+}
+
+.section.Page6 .Cards .Card h4 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #222222;
+    margin: 14px 0 14px 0;
+}
+
+.section.Page6 .Cards .Card p {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+    color: #999999;
+}
+
+.section.Page6 .Paginate {
+    margin-top: 10px;
+}
+
+
+
+
+/* Footer : Last Page */
+footer {
+    display: flex;
+    justify-content: center;
+    /* background: #000; */
+}
+
+/* Orange Box */
+footer .Box {
+    width: 90%;
+}
+
+footer .Box .OrangeBox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 300px;
+    width: 100%;
+    min-height: 350px;
+    border-radius: 10px;
+    padding: 14px;
+    background: #FA7436;
+}
+
+footer .Box .OrangeBox h2 {
+    min-width: 300px;
+    /* width: 60%; */
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Volkhov", serif;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+footer .Box .OrangeBox .InputBox {
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    z-index: 1;
+    /* background: rebeccapurple; */
+}
+
+footer .Box .OrangeBox .InputBox input {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    padding-left: 50px;
+    /* font-size: 18px; */
+    font-weight: bolder;
+    color: magenta;
+    /* background: #000; */
+}
+
+footer .Box .OrangeBox .InputBox input:focus {
+    outline: none;
+    border: 3px solid darkorchid;
+}
+
+footer .Box .OrangeBox .InputBox .OrangeButton {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    padding: 8px;
+}
+
+footer .Box .OrangeBox .InputBox .MailIcon {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+}
+
+/* Circles */
+footer .Box .OrangeBox .Circles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer .Box .OrangeBox .Circles.Circle1 {
+    left: 2px;
+}
+
+footer .Box .OrangeBox .Circles.Circle2 {
+    left: 3px;
+}
+
+footer .Box .OrangeBox .Circles.Circle3 {
+    left: 4px;
+}
+
+footer .Box .OrangeBox .Circles.Circle4 {
+    left: 5px;
+}
+
+footer .Box .OrangeBox .Circles.Circle5 {
+    left: 6px;
+}
+
+footer .Box .OrangeBox .Circles.Circle6 {
+    left: 10px;
+}
+
+/* Trees */
+footer .Box .OrangeBox .Tree {
+    top: 6px;
+    right: 0;
+    position: absolute;
+}
+
+footer .Box .OrangeBox .Tree.Tree2 {
+    top: 30px;
+    right: 45px;
+}
+
+footer.section .Box .SocialAndQuickLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 24px 0 24px 0;
+    gap: 24px;
+}
+
+footer.section .Box .SocialAndQuickLinks .SocialLinks #Title div {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Volkhov", serif;
+}
+
+footer.section .Box .SocialAndQuickLinks .SocialLinks p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #666666;
+}
+
+footer.section .Box .SocialAndQuickLinks .SocialLinks .SocialIcons img {
+    cursor: pointer;
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 100px;
+    /* width: 400px;
+    background: gray; */
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks nav a {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #666666;
+    padding: 12px 0 0 0;
+    margin: 0;
+}
+
+footer.section .Box .SocialAndQuickLinks .QuickLinks div h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 14px;
+    color: #222222;
+}
+
+footer.section .Box hr {
+    margin: 14px 0 14px 0;
+}
+
+footer.section .Box .Copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+footer.section .Box .Copyright p {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    color: #666666;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+
+    .Information {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
