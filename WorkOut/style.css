@@ -148,11 +148,12 @@ header.section {
     position: relative;
     height: 400px;
     width: 450px;
-    min-width: 300px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: greenyellow;
     /* background: gold;
     display: none; */
 }
@@ -173,8 +174,6 @@ header.section {
     position: absolute;
     top: 55px;
     right: 15%;
-    width: 300px;
-    height: 350px;
 }
 
 
@@ -1177,5 +1176,13 @@ footer.section .Box .Copyright p {
     .Information {
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        width: 100%;
+        background: pink;
+        border: 2px solid black;
     }
 }
