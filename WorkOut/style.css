@@ -668,6 +668,7 @@ section.Page3 .Page3Cards {
 
 .section.Page4 .Page4Cards .Page4Card .Image {
     width: 250px;
+    /* background: rebeccapurple; */
 }
 
 .section.Page4 .Page4Cards {
@@ -1181,7 +1182,7 @@ footer.section .Box .Copyright p {
 @media (max-width: 425px) {
     body {
         width: 100%;
-        background: pink;
+        /* background: pink; */
         border: 2px solid black;
     }
 }
