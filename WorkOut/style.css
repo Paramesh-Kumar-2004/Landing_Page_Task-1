@@ -149,7 +149,7 @@ header.section {
     position: relative;
     min-height: 400px;
     width: 450px;
-    min-width: 320px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -789,7 +789,7 @@ section.Page3 .Page3Cards {
 .section.Page5 {
     min-height: 100vh;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 126px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -827,6 +827,7 @@ section.Page3 .Page3Cards {
 /* Cards */
 .section.Page5 .Cards {
     position: relative;
+    /* background: #000; */
     /* display: none; */
 }
 
@@ -868,14 +869,18 @@ section.Page3 .Page3Cards {
     left: 10%;
     z-index: -1;
     opacity: 0.3;
+    /* border: 1px solid red; */
 }
 
 /* Flights */
 
 .section.Page5 .Cards .Flights {
     position: absolute;
-    top: -126px;
-    left: 250px;
+    top: -80px;
+    left: 200px;
+    width: 124px;
+    height: 124px;
+    /* background: #000; */
 }
 
 .section.Page5 .Cards .Flights .FlightsInside {
@@ -1082,14 +1087,17 @@ footer .Box .OrangeBox .Circles {
 }
 
 footer .Box .OrangeBox .Circles.Circle1 {
+    width: 50px;
     left: 2px;
 }
 
 footer .Box .OrangeBox .Circles.Circle2 {
+    width: 70px;
     left: 3px;
 }
 
 footer .Box .OrangeBox .Circles.Circle3 {
+    width: 90px;
     left: 4px;
 }
 
@@ -1196,10 +1204,29 @@ footer.section .Box .Copyright p {
 
 
 
-/* @media (max-width: 0px) {
+@media (max-width: 400px) {
 
-    .Information {
-        flex-wrap: wrap;
-        justify-content: space-around;
+    /* Page 5 : Testimonial */
+    .section.Page5 .Cards .Card {
+        width: 250px;
+        height: auto;
+        border: 2px solid cyan;
     }
-} */
+
+    .section.Page5 .Cards .Card2 {
+        position: absolute;
+        padding-right: 24px;
+        top: 60px;
+        left: 24px;
+        z-index: -1;
+        opacity: 0.3;
+    }
+
+    .section.Page5 .Cards .Flights {
+        position: absolute;
+        top: -80px;
+        left: 100px;
+        width: 124px;
+        height: 124px;
+    }
+}
