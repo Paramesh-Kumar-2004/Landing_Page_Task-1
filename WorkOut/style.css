@@ -186,11 +186,16 @@ header.section {
     width: 100%;
 }
 
-.BGImageContainer .MenPNG img {
-    width: 320px;
+.BGImageContainer .MenPNG {
     position: absolute;
-    bottom: 0;
-    left: 50px;
+    max-width: 320px;
+    width: 100%;
+    /* background: #000; */
+}
+
+.BGImageContainer .MenPNG img {
+    width: 100%;
+    flex-shrink: 1;
 }
 
 /* Home Page : Left Side Content  */
@@ -1190,18 +1195,10 @@ footer.section .Box .Copyright p {
 
 
 
-@media (max-width: 900px) {
+/* @media (max-width: 0px) {
 
     .Information {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-}
-
-@media (max-width: 425px) {
-    body {
-        width: 100%;
-        /* background: pink; */
-        border: 2px solid black;
-    }
-}
+} */
