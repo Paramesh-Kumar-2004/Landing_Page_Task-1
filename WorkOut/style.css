@@ -431,11 +431,12 @@ section.section {
 }
 
 .Page2Card .Page2CardsContents p {
-    word-wrap: break-word;
+    /* background: #000; */
     font-size: 14px;
     font-family: "Poppins", "serif";
     font-weight: 300;
     color: #222222;
+    word-wrap: break-word;
 }
 
 .Page2Cards .Page2Card .Page2Img img {
@@ -458,12 +459,15 @@ section.section {
 }
 
 .section.Page3 .Page3Title {
+    width: 100%;
     display: flex;
+    justify-content: center;
     padding: 14px;
 }
 
 .section.Page3 .Page3Title .Page3Title_Para {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     text-align: center;
     /* background: pink; */
 }
@@ -471,8 +475,10 @@ section.section {
 .section.Page3 .Page3Title .Page3Title_Para h4 {
     font-family: "Volkhov", serif;
     font-size: 48px;
+    word-wrap: break-word;
     font-weight: bold;
     /* color: #222222; */
+    /* background: skyblue; */
 }
 
 .section.Page3 .Page3Title .Page3Title_Para h4 span {
@@ -486,8 +492,6 @@ section.section {
     color: #666666;
 }
 
-
-
 /* Page 3 Cards Styles */
 section.Page3 .Page3Cards {
     margin-top: 24px;
@@ -500,16 +504,23 @@ section.Page3 .Page3Cards {
 }
 
 .section.Page3 .Page3Card {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+    min-width: 100px;
     flex-shrink: 1;
     max-width: 300px;
+    background: pink;
     border-radius: 7px;
     box-shadow: 0 0 10px #aaaaa8;
 }
 
 .section.Page3 .Page3Card .ImageContainer {
     position: relative;
+}
+
+.section.Page3 .Page3Card img {
+    width: 100%;
+    cursor: pointer;
 }
 
 .section.Page3 .Page3Card .ImageContainer button {
@@ -522,11 +533,6 @@ section.Page3 .Page3Cards {
     color: white;
     border: none;
     padding: 8px;
-}
-
-.section.Page3 .Page3Card img {
-    width: 220px;
-    cursor: pointer;
 }
 
 .section.Page3 .Page3CardContents {
@@ -1217,6 +1223,35 @@ footer.section .Box .Copyright p {
 
 
 @media (max-width: 400px) {
+
+    /* Page 2 */
+    .Page2Card .Page2CardsContents div {
+        font-size: 20px;
+    }
+
+    .section .Page2Title .Page2Title_Para h4 {
+        font-size: 40px;
+    }
+
+    .section .Page2Title .Page2Title_Para p {
+        font-size: 18px;
+    }
+
+    /* Page 3 */
+    .section.Page3 .Page3Title .Page3Title_Para h4 {
+        font-size: 24px;
+    }
+
+    .section.Page3 .Page3Title .Page3Title_Para p {
+        font-size: 10px;
+    }
+
+
+    /* Page 4 */
+    .section.Page4 .Page4Title .Page4Title_Para h4 {
+        font-size: 24px;
+    }
+
 
     /* Page 5 : Testimonial */
     .section.Page5 .Cards .Card {
