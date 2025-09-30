@@ -8,10 +8,10 @@
 
 
 
-/* section,
+section,
 .section {
     border: 3px solid red;
-} */
+}
 
 
 *,
@@ -827,6 +827,7 @@ section.Page3 .Page3Cards {
 /* Cards */
 .section.Page5 .Cards {
     position: relative;
+    display: none;
 }
 
 .section.Page5 .Cards .UserImage {
