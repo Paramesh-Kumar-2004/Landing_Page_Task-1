@@ -500,6 +500,10 @@ section.Page3 .Page3Cards {
 }
 
 .section.Page3 .Page3Card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    max-width: 300px;
     border-radius: 7px;
     box-shadow: 0 0 10px #aaaaa8;
 }
@@ -687,11 +691,6 @@ section.Page3 .Page3Cards {
     position: absolute;
 }
 
-.section.Page4 .Page4Cards .Page4Card .Image {
-    width: 250px;
-    /* background: rebeccapurple; */
-}
-
 .section.Page4 .Page4Cards {
     width: 100%;
     display: flex;
@@ -703,9 +702,19 @@ section.Page3 .Page3Cards {
 }
 
 .section.Page4 .Page4Cards .Page4Card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 250px;
     border-radius: 14px;
     /* background: pink; */
     box-shadow: 0 0 10px #aaaaa8;
+}
+
+.section.Page4 .Page4Cards .Page4Card .Image {
+    max-width: 250px;
+    flex: 1 1 auto;
+    width: 100%;
+    /* background: rebeccapurple; */
 }
 
 .section.Page4 .Page4Cards .Page4Card .Page4CardContents {
@@ -1211,9 +1220,9 @@ footer.section .Box .Copyright p {
 
     /* Page 5 : Testimonial */
     .section.Page5 .Cards .Card {
-        width: 250px;
+        width: 220px;
         height: auto;
-        border: 2px solid cyan;
+        /* border: 2px solid cyan; */
     }
 
     .section.Page5 .Cards .Card2 {
