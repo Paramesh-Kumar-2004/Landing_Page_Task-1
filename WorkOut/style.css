@@ -827,7 +827,7 @@ section.Page3 .Page3Cards {
 /* Cards */
 .section.Page5 .Cards {
     position: relative;
-    display: none;
+    /* display: none; */
 }
 
 .section.Page5 .Cards .UserImage {
