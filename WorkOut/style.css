@@ -981,12 +981,13 @@ section.Page3 .Page3Cards {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 24px;
+    /* background: #000; */
 }
 
 .section.Page6 .Cards .Card {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 100%;
     padding: 14px;
 }
 
@@ -1224,13 +1225,19 @@ footer.section .Box .Copyright p {
 
 @media (max-width: 400px) {
 
+    /* Page 1 */
+    .ContentContainer h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
     /* Page 2 */
     .Page2Card .Page2CardsContents div {
         font-size: 20px;
     }
 
     .section .Page2Title .Page2Title_Para h4 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .section .Page2Title .Page2Title_Para p {
@@ -1239,7 +1246,7 @@ footer.section .Box .Copyright p {
 
     /* Page 3 */
     .section.Page3 .Page3Title .Page3Title_Para h4 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .section.Page3 .Page3Title .Page3Title_Para p {
@@ -1249,11 +1256,24 @@ footer.section .Box .Copyright p {
 
     /* Page 4 */
     .section.Page4 .Page4Title .Page4Title_Para h4 {
-        font-size: 24px;
+        font-size: 30px;
+    }
+
+    .section.Page4 .Page4Title .Page4Title_Para p {
+        font-size: 12px;
     }
 
 
     /* Page 5 : Testimonial */
+
+    .section.Page5 .Contents h2 {
+        font-size: 30px;
+    }
+
+    .section.Page5 .Contents p {
+        font-size: 12px;
+    }
+
     .section.Page5 .Cards .Card {
         width: 220px;
         height: auto;
@@ -1276,6 +1296,13 @@ footer.section .Box .Copyright p {
         width: 124px;
         height: 124px;
     }
+
+
+    /* Page 6 */
+    .section.Page6 .Title h1 {
+        font-size: 30px;
+    }
+
 
     /* Footer */
     footer .Box .OrangeBox .Circles.Circle1 {
