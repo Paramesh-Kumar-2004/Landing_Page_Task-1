@@ -22,6 +22,7 @@ The page is fully responsive, ensuring a smooth user experience across desktops,
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live Demo 🌐 Deployment URLs
 
-Check out the deployed landing page here: [https://landing-page-vp.netlify.app/](https://landing-page-vp.netlify.app/)
+- **Netlify:** [https://landing-page-vp.netlify.app/](https://landing-page-vp.netlify.app/)
+- **GitHub Pages:** [https://paramesh-kumar-2004.github.io/Landing_Page_Task-1/](https://paramesh-kumar-2004.github.io/Landing_Page_Task-1/)
