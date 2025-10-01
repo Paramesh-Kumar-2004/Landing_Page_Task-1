@@ -21,3 +21,7 @@ The page is fully responsive, ensuring a smooth user experience across desktops,
 - Clean and minimal UI.
 
 ---
+
+## 🚀 Live Demo
+
+Check out the deployed landing page here: [https://landing-page-vp.netlify.app/](https://landing-page-vp.netlify.app/)
