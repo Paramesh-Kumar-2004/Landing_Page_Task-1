@@ -165,6 +165,7 @@ header.section {
     flex-shrink: 1;
     top: 0;
     width: 100%;
+    background: #000;
 }
 
 .BGImageContainer .Flights img {
@@ -179,6 +180,7 @@ header.section {
     flex-shrink: 1;
     bottom: 0;
     width: 100%;
+    /* background: #000; */
 }
 
 .BGImageContainer .OrangeOfCircle img {
@@ -1230,6 +1232,23 @@ footer.section .Box .Copyright p {
     .ContentContainer h1 {
         font-size: 30px;
         line-height: 50px;
+    }
+
+    .BGImageContainer .MenPNG {
+        bottom: 0;
+    }
+
+    .CardsContent {
+        font-size: 12px;
+    }
+
+    .BestTour.Cards {
+        top: 150px;
+    }
+
+    .CustomerReview.Cards {
+        top: 80%;
+        left: 0;
     }
 
     /* Page 2 */
