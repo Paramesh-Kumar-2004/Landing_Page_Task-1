@@ -1391,7 +1391,9 @@ footer.section .Box .Copyright p {
     footer .Box .OrangeBox .InputBox {
         width: 100%;
     }
+}
 
+@media (max-width:565px) {
     footer .Box .OrangeBox .InputBox .OrangeButton {
         position: relative;
         align-self: center;
@@ -1399,5 +1401,4 @@ footer.section .Box .Copyright p {
         width: 50%;
         border: 2px solid cyan;
     }
-
 }
