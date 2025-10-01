@@ -165,7 +165,7 @@ header.section {
     flex-shrink: 1;
     top: 0;
     width: 100%;
-    background: #000;
+    /* background: #000; */
 }
 
 .BGImageContainer .Flights img {
