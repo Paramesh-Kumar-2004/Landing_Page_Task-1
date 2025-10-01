@@ -1242,8 +1242,29 @@ footer.section .Box .Copyright p {
         font-size: 12px;
     }
 
+    .CustomerReview.Cards #NumberOfCustomerReview {
+        font-size: 14px;
+    }
+
+    .CustomerReview.Cards #NumberOfCustomerReviewText {
+        font-size: 10px;
+    }
+
+    .ExploreContainer.Cards .CardsContent #ExploreTitle {
+        font-size: 14px;
+    }
+
+    .ExploreContainer.Cards .CardsContent #ExploreText {
+        font-size: 10px;
+    }
+
     .BestTour.Cards {
-        top: 150px;
+        top: 100px;
+    }
+
+    .ExploreContainer.Cards {
+        top: 60%;
+        right: -24px;
     }
 
     .CustomerReview.Cards {
