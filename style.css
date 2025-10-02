@@ -1148,8 +1148,10 @@ footer .Box .OrangeBox .Tree.Tree2 {
 }
 
 footer.section .Box .SocialAndQuickLinks {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    /* background: #000; */
     flex-wrap: wrap;
     margin: 24px 0 24px 0;
     gap: 24px;
@@ -1272,7 +1274,7 @@ footer.section .Box .Copyright p {
         left: 0;
     }
 
-    
+
     /* Page 2 */
     .Page2Card .Page2CardsContents div {
         font-size: 20px;
