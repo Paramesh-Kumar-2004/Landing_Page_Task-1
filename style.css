@@ -1399,5 +1399,6 @@ footer.section .Box .Copyright p {
         align-self: center;
         font-size: 14px;
         width: 50%;
+        border: 2px solid cyan;
     }
 }
