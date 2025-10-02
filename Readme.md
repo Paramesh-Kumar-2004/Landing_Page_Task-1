@@ -11,6 +11,7 @@ The page is fully responsive, ensuring a smooth user experience across desktops,
 ## 🛠️ Technologies Used
 
 - **HTML5** – For structuring the content.
+
 - **CSS3** – For styling and responsive design.
 
 ---
