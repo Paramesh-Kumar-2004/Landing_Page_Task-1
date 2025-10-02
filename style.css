@@ -1402,3 +1402,10 @@ footer.section .Box .Copyright p {
         border: 2px solid cyan;
     }
 }
+
+
+@media (max-width:264px) {
+    body {
+        background: gray;
+    }
+}
