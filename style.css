@@ -412,8 +412,9 @@ section.section {
 }
 
 .section .Page2Cards .Page2Card {
-    height: 200px;
-    width: 280px;
+    min-height: 200px;
+    min-width: 280px;
+    flex: 1 1 0;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -438,11 +439,14 @@ section.section {
     font-weight: 300;
     color: #222222;
     word-wrap: break-word;
+    padding-bottom: 14px;
+    /* background: pink; */
 }
 
 .Page2Cards .Page2Card .Page2Img img {
     margin: 14px 0 0 14px;
-    width: 40px;
+    width: 100px;
+    /* background: red; */
 }
 
 
@@ -546,15 +550,6 @@ section.Page3 .Page3Cards {
     /* background: gray; */
 }
 
-.section.Page3 .Page3CardContents .NameAndRating .Ratings::before {
-    /* background: #000; */
-    position: relative;
-    top: 2px;
-    transform: scale(0.9);
-    content: url(assets/Page\ 3/Little_Star.svg);
-    padding-right: 4px;
-}
-
 .section.Page3 .Page3CardContents .LocationAndPrice {
     display: flex;
     justify-content: space-between;
@@ -562,7 +557,20 @@ section.Page3 .Page3Cards {
     /* background: gray; */
 }
 
-.section.Page3 .Page3CardContents .LocationAndPrice .LocationName {
+/* .section.Page3 .Page3CardContents .LocationAndPrice .LocationName::before {
+    position: relative;
+    top: 2px;
+    transform: scale(0.9);
+    content: url(assets/Page\ 3/Gray_Map.svg);
+    padding-right: 3px;
+} */
+.MapAndLocation {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.MapAndLocation h1 {
     display: flex;
     font-size: 16px;
     font-weight: 400;
@@ -571,12 +579,8 @@ section.Page3 .Page3Cards {
     /* background: pink; */
 }
 
-.section.Page3 .Page3CardContents .LocationAndPrice .LocationName::before {
-    position: relative;
-    top: 2px;
-    transform: scale(0.9);
-    content: url(assets/Page\ 3/Gray_Map.svg);
-    padding-right: 3px;
+.MapAndLocation div {
+    display: flex;
 }
 
 .section.Page3 .Page3CardContents .LocationAndPrice div .Price {
@@ -790,14 +794,6 @@ section.Page3 .Page3Cards {
     transform: scale(0.9);
     content: url(assets/Page\ 4/Send_Arrow.svg);
     padding-right: 12px;
-}
-
-.section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice .Ratings::before {
-    position: relative;
-    top: 2px;
-    content: url(assets/Page\ 4/Little_Star.svg);
-    padding-right: 5px;
-    /* background: red; */
 }
 
 
@@ -1467,6 +1463,24 @@ footer.section .Box .Copyright p {
     }
 
     .section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice .Ratings {
+        font-size: 30px;
+    }
+
+
+
+    .section .Page2Title .Page2Title_Para h4 {
+        font-size: 68px;
+    }
+
+    .section .Page2Title .Page2Title_Para p {
+        font-size: 28px;
+    }
+
+    .Page2Card .Page2CardsContents div {
+        font-size: 30px;
+    }
+
+    .Page2Card .Page2CardsContents p {
         font-size: 30px;
     }
 }
