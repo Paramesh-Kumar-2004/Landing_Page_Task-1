@@ -698,6 +698,8 @@ section.Page3 .Page3Cards {
     position: absolute;
 }
 
+
+/* Cards */
 .section.Page4 .Page4Cards {
     width: 100%;
     display: flex;
@@ -711,14 +713,13 @@ section.Page3 .Page3Cards {
 .section.Page4 .Page4Cards .Page4Card {
     display: flex;
     flex-direction: column;
-    flex: 0 1 250px;
+    flex: 1 1 0;
     border-radius: 14px;
     /* background: pink; */
     box-shadow: 0 0 10px #aaaaa8;
 }
 
 .section.Page4 .Page4Cards .Page4Card .Image {
-    max-width: 250px;
     flex: 1 1 auto;
     width: 100%;
     /* background: rebeccapurple; */
@@ -812,13 +813,14 @@ section.Page3 .Page3Cards {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 24px;
-    /* background: gray; */
+    /* background: pink; */
 }
 
 .section.Page5 .Contents {
-    width: 400px;
+    min-width: 400px;
     min-height: 300px;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     /* background: cyan; */
@@ -828,6 +830,7 @@ section.Page3 .Page3Cards {
     font-family: "Volkhov", sans-serif;
     font-size: 48px;
     font-weight: bold;
+    word-break: break-all;
 }
 
 .section.Page5 .Contents h2 span {
@@ -843,8 +846,9 @@ section.Page3 .Page3Cards {
 /* Cards */
 .section.Page5 .Cards {
     position: relative;
-    /* background: #000; */
-    /* display: none; */
+    display: flex;
+    width: 50%;
+    min-width: 300px;
 }
 
 .section.Page5 .Cards .UserImage {
@@ -854,8 +858,9 @@ section.Page3 .Page3Cards {
 }
 
 .section.Page5 .Cards .Card {
-    width: 300px;
-    height: 250px;
+    min-width: 300px;
+    min-height: 250px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -966,6 +971,7 @@ section.Page3 .Page3Cards {
 
 .section.Page6 .Title h1 {
     font-size: 48px;
+    transform: scale(1.2);
     font-family: "Volkhov", serif;
     font-weight: bold;
     margin-bottom: 24px;
@@ -987,8 +993,11 @@ section.Page3 .Page3Cards {
 .section.Page6 .Cards .Card {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    flex: 1 1 0;
+    min-width: 250px;
+    max-width: 500px;
     padding: 14px;
+    /* background: rebeccapurple; */
 }
 
 .section.Page6 .Cards .Card h4 {
@@ -1404,5 +1413,12 @@ footer.section .Box .Copyright p {
         font-size: 14px;
         width: 50%;
         border: 2px solid cyan;
+    }
+}
+
+
+@media (min-width:1800px) {
+    .section.Page6 .Cards .Card h4 {
+        font-size: 32px;
     }
 }
