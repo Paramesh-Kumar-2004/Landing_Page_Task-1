@@ -508,11 +508,11 @@ section.Page3 .Page3Cards {
     /* display: flex; */
     /* flex-direction: column; */
     min-width: 100px;
-    flex-shrink: 1;
-    max-width: 200px;
-    /* background: pink; */
+    flex: 1 1 0;
+    min-width: 200px;
     border-radius: 7px;
     box-shadow: 0 0 10px #aaaaa8;
+    /* background: pink; */
 }
 
 .section.Page3 .Page3Card .ImageContainer {
@@ -1420,5 +1420,53 @@ footer.section .Box .Copyright p {
 @media (min-width:1800px) {
     .section.Page6 .Cards .Card h4 {
         font-size: 32px;
+    }
+
+    .section.Page4 .Page4Title .Page4Title_Para h4 {
+        font-size: 100px;
+    }
+
+    .section.Page4 .Page4Title .Page4Title_Para p {
+        font-size: 40px;
+    }
+
+    .section.Page3 .Page3Cards .Page3Card .Page3CardContents .NameAndRating h4 {
+        font-size: 50px;
+    }
+
+    .section.Page3 .Page3Cards .Page3Card .Page3CardContents .NameAndRating p {
+        font-size: 50px;
+    }
+
+    .section.Page3 .Page3Cards .Page3Card .Page3CardContents .LocationAndPrice span {
+        font-size: 40px;
+    }
+
+    .section.Page3 .Page3Cards .Page3Card .Page3CardContents .LocationAndPrice .LocationName {
+        font-size: 40px;
+    }
+
+    .section.Page3 .Page3Title .Page3Title_Para h4 {
+        font-size: 100px;
+    }
+
+    .section.Page3 .Page3Title .Page3Title_Para p {
+        font-size: 50px;
+    }
+
+    .section.Page4 .Page4Cards .Page4Card .Page4CardContents .NameAndPrice .Name {
+        font-size: 50px;
+    }
+
+    .section.Page4 .Page4Cards .Page4Card .Page4CardContents .NameAndPrice .Price {
+        font-size: 50px;
+    }
+
+    .section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice .LocationName {
+        font-size: 30px;
+    }
+
+    .section.Page4 .Page4Cards .Page4Card .Page4CardContents .LocationAndPrice .Ratings {
+        font-size: 30px;
     }
 }
